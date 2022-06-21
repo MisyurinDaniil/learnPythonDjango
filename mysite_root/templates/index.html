@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Новая страница</h1>
-    {{ a }}
-    <h1> {{ text }} </h1>
-</body>
-</html>
+<!--Наследуемся от шаблона base.html-->
+{% extends 'base.html' %}
+
+{% block title %}Title index{% endblock %}
+<!--    Указываем что будем загружать статические файлы     -->
+{% load static %}
+<!--    Создадим блок с имененм content-->
+{% block content %}
+    <h2>Блок из файла index.html</h2>
+    <!--  Подгружаем статический файл  -->
+    <img src="{% static 'img\1.jpg' %}" alt="" height="300">
+    <!--    Подключим и отрисуем старый файл index_old.html. В него также будут переданы переменны из view.py-->
+    {% include 'index_old.html' %}
+<!--    Закроем блок-->
+{% endblock %}
