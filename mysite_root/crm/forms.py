@@ -7,5 +7,5 @@ class OrderForm(forms.Form):
     # форма не отправится без заполненных полей, имеет встроенную валидацию
     # required=False - делает поле необязательным
     # widget=forms.TextInput(attrs={'class' : 'css-input'} - зададим класс тегу input для настройки css
-    name = forms.CharField(max_length=200, required=False, widget=forms.TextInput(attrs={'class' : 'css-input'}))
-    phone = forms.CharField(max_length=200)
+    name = forms.CharField(max_length=200, widget=forms.TextInput(attrs={'class' : 'form-control'}))
+    phone = forms.CharField(max_length=200, widget=forms.TextInput(attrs={'class' : 'form-control'}))

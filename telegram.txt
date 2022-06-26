@@ -1,0 +1,7 @@
+ https://api.telegram.org/bot5464396018:AAHjDN1FNeEV2dG4CwzHrpG29DgtvpUJTSM/sendMessage?chat_id=-680713702&text=тест
+ 
+ t.me/Qualitasleather_bot
+ 
+ 5464396018:AAHjDN1FNeEV2dG4CwzHrpG29DgtvpUJTSM
+ 
+ 
